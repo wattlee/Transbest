@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.baconpotato.limingzen.httpget.airlineActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="航空&amp;空铁路线规划"
+                android:id="@+id/textView7"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="出发地"
+                android:id="@+id/textView8"
+                android:layout_marginTop="42dp"
+                android:layout_below="@+id/textView7"
+                android:layout_alignEnd="@+id/editText4"
+                android:layout_alignRight="@+id/editText4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="目的地"
+                android:id="@+id/textView9"
+                android:layout_above="@+id/editText2"
+                android:layout_toEndOf="@+id/textView7"
+                android:layout_toRightOf="@+id/textView7" />
+
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText1"
+                android:hint="请输入地名"
+                android:layout_below="@+id/textView9"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/imageButton"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/imageButton" />
+
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:hint="请输入地名"
+                android:layout_below="@+id/textView8"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/imageButton" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@drawable/b"
+                android:layout_alignTop="@+id/editText1"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="出发日期"
+                android:id="@+id/textView10"
+                android:layout_alignBottom="@+id/BtnchooseDate"
+                android:layout_alignStart="@+id/textView8" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date choose"
+                android:id="@+id/BtnchooseDate"
+                android:layout_below="@+id/imageButton"
+                android:layout_alignStart="@+id/editText1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="请选择离您的出发地/目的地最近的城市的机场"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/textView7"
+                android:layout_alignStart="@+id/textView12"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="如果您登机前或下机后想乘坐列车请输入首末站"
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="出发地"
+                android:id="@+id/textView13"
+                android:layout_below="@+id/textView12"
+                android:layout_alignRight="@+id/editText4"
+                android:layout_alignEnd="@+id/editText4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="目的地"
+                android:id="@+id/textView14"
+                android:layout_alignTop="@+id/textView13"
+                android:layout_alignStart="@+id/editText3"
+                android:layout_alignLeft="@+id/editText3" />
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:hint="请输入地名"
+                android:layout_below="@+id/textView14"
+                android:layout_alignEnd="@+id/textView12"
+                android:layout_alignRight="@+id/textView12" />
+
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText4"
+                android:hint="请输入地名"
+                android:layout_below="@+id/textView13"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/b"
+                android:layout_alignBottom="@+id/editText3"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转到铁路路线规划"
+                android:id="@+id/button4"
+                android:layout_below="@+id/imageButton2"
+                android:layout_toStartOf="@+id/textView14" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Transbest!"
+                android:id="@+id/button1"
+                android:layout_below="@+id/button4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

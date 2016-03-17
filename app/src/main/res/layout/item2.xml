@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+    <LinearLayout
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:text="2016-03-20 05:50:00"
+            android:textSize="20sp"
+            android:id="@+id/flytime"/>
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="32dp"
+            android:text="首都国际机场T2"
+            android:id="@+id/startairport"/>
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="32dp"
+            android:text="四川航空"
+            android:textSize="15sp"
+            android:id="@+id/company_name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="96dp"
+        android:layout_height="118dp"
+        android:paddingLeft="4dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="54dp"
+            android:src="@drawable/d"
+            android:id="@+id/pict"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:text="经济舱"
+            android:gravity="center_horizontal"
+            android:id="@+id/seat_type"/>
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:text="SQ135"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:id="@+id/airnumber"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:paddingLeft="4dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:text="2016-03-20 07:50:00"
+            android:textSize="20sp"
+            android:id="@+id/arrivaltime"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="32dp"
+            android:text="浦东国际机场T1"
+            android:id="@+id/endairport"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="32dp"
+            android:text="2h30m"
+            android:textSize="20sp"
+            android:id="@+id/airprice"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

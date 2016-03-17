@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+    <LinearLayout
+        android:layout_width="64dp"
+        android:layout_height="96dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:text="G102"
+        android:textSize="20sp"
+        android:id="@+id/trainnumber"/>
+    <TextView
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:text="06:43"
+        android:id="@+id/start_time"/>
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+            android:text="12:18"
+            android:id="@+id/end_time"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:paddingLeft="4dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:text="05小时35分"
+        android:id="@+id/last_time"
+        android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="32dp"
+            android:text="上海虹桥"
+            android:gravity="center_horizontal"
+            android:id="@+id/startplace"/>
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="32dp"
+            android:text="北京南站"
+            android:id="@+id/endplace"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="96dp"
+    android:layout_height="96dp"
+    android:paddingLeft="4dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:text="余票"
+        android:id="@+id/price"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:text="二等座"
+        android:id="@+id/seattype"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:text="527张"
+        android:id="@+id/ticketsnumber"
+        android:gravity="center_horizontal"/>
+</LinearLayout>
+
+</LinearLayout>
